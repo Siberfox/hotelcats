@@ -1,19 +1,15 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 ul {
   padding: 0;
   margin: 0;
 }
-
 li {
   list-style-type: none;
 }
-
 .container {
   width: 1170px;
   margin: auto;
@@ -34,4 +30,3 @@ li {
     background-color: green;
   }
 }
-/*# sourceMappingURL=style.css.map */
