@@ -1,0 +1,39 @@
+.header {
+  &-block {
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 46px;
+    height: 38px;
+  }
+  &__humb {
+    text-decoration: none;
+    width: 22px;
+    height: 14px;
+    border-radius: 50%;
+    display: block;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: -7px;
+      width: 22px;
+      height: 2px;
+      background-color: #1a212f;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -7px;
+      width: 22px;
+      height: 2px;
+      background-color: #1a212f;
+    }
+  }
+}

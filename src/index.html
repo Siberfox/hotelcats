@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" co ntent="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Котейка</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -11,11 +12,19 @@
       <div class="container">
         <div class="header-block">
           <img src="img/main-logo.svg" alt="" class="header__logo" />
-          <button class="header__humb"></button>
+          <a class="header__humb header__humb--menu" id="button"></a>
         </div>
       </div>
     </header>
     <main></main>
     <footer></footer>
+
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h3 class="modal-dialog__title">Всплывающее окно</h3>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

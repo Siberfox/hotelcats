@@ -11,22 +11,19 @@ li {
   list-style-type: none;
 }
 .container {
-  width: 1170px;
+  width: 90%;
+  max-width: 580px;
   margin: auto;
-  background-color: red;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
   .container {
-    width: 760px;
-    background-color: yellow;
+    min-width: 760px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 580px;
-    width: 90%;
-    background-color: green;
+    min-width: 1170px;
   }
 }
