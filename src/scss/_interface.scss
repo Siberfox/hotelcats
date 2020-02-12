@@ -15,6 +15,20 @@ li {
   max-width: 580px;
   margin: auto;
 }
+.section {
+  padding: 35px 0;
+}
+.button {
+  border-radius: 25px;
+  background-color: $btn-color;
+  width: 274px;
+  height: 46px;
+  border: none;
+  &:hover {
+    background-color: lighten($btn-color, 10%);
+    cursor: pointer;
+  }
+}
 
 @media (min-width: 768px) {
   .container {

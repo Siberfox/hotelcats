@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@mixin rub-b {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+@mixin rub-m {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+@mixin lato-r {
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+}

@@ -5,35 +5,41 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__logo {
+  &-logo {
     width: 46px;
     height: 38px;
   }
-  &__humb {
-    text-decoration: none;
-    width: 22px;
-    height: 14px;
-    border-radius: 50%;
+  &-btn {
     display: block;
-    &::before {
-      content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    &__humb {
       position: absolute;
-      display: block;
-      left: 0;
-      top: -7px;
+      top: 50%;
+      margin-top: -1px;
+      left: 50%;
+      margin-left: -11px;
       width: 22px;
       height: 2px;
-      background-color: #1a212f;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      left: 0;
-      bottom: -7px;
-      width: 22px;
-      height: 2px;
-      background-color: #1a212f;
+      background-color: $text-color;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: $text-color;
+        transform: translateY(-7px);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: $text-color;
+        transform: translateY(7px);
+      }
     }
   }
 }
