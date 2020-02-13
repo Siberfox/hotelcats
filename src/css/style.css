@@ -36,9 +36,19 @@ img {
 .button {
   border-radius: 25px;
   background-color: #ff7236;
-  width: 274px;
-  height: 46px;
+  width: 240px;
+  height: 50px;
   border: none;
+  color: #fffefd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .button:hover {
@@ -353,6 +363,7 @@ img {
   background-image: url("../img/paw-bg.svg");
   background-repeat: no-repeat;
   background-position: right top 37px;
+  padding-bottom: 5px;
 }
 
 .benefits-block {
@@ -404,5 +415,106 @@ img {
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
+}
+
+.rooms {
+  background-image: url("../img/fish-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left top 75px;
+}
+
+.rooms-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rooms-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+
+.rooms-list {
+  max-width: 600px;
+  width: 90%;
+}
+
+.rooms-list__item {
+  display: block;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.card {
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 0px 0px 8px 8px;
+  margin: 15px 15px;
+  margin-top: 0;
+}
+
+.card__photo {
+  margin-bottom: 25px;
+}
+
+.card__subtitle {
+  display: block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.card__stats {
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.card__stats-item {
+  margin-left: 44px;
+  margin-bottom: 17px;
+  position: relative;
+}
+
+.card__stats-item::before {
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #fac663;
+}
+
+.card__button {
+  padding-left: 49px;
+  margin: auto;
+}
+
+.card__button-text {
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card__button-icon {
+  width: 36px;
+  height: 36px;
 }
 /*# sourceMappingURL=style.css.map */

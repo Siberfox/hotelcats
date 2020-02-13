@@ -1,0 +1,75 @@
+.rooms {
+  background-image: url('../img/fish-bg.svg');
+  background-repeat: no-repeat;
+  background-position: left top 75px;
+  &-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-title {
+    @include rub-b;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+  &-list {
+    max-width: 600px;
+    width: 90%;
+    &__item {
+      display: block;
+      margin: auto;
+      padding-bottom: 25px;
+    }
+  }
+}
+.card {
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 0px 0px 8px 8px;
+  margin: 15px 15px;
+  margin-top: 0;
+  &__photo {
+    margin-bottom: 25px;
+  }
+  &__subtitle {
+    display: block;
+    @include rub-m;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  &__stats {
+    @include lato-r;
+    font-size: 15px;
+    line-height: 18px;
+    &-item {
+      margin-left: 44px;
+      margin-bottom: 17px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -18px;
+        top: 1px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: $bg-orange;
+      }
+    }
+  }
+  &__button {
+    padding-left: 49px;
+    margin: auto;
+    &-text {
+      @include lato-r;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &-icon {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

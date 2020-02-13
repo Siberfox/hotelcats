@@ -28,9 +28,13 @@ img {
 .button {
   border-radius: 25px;
   background-color: $btn-color;
-  width: 274px;
-  height: 46px;
+  width: 240px;
+  height: 50px;
   border: none;
+  color: $btn-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &:hover {
     background-color: lighten($btn-color, 10%);
     cursor: pointer;
