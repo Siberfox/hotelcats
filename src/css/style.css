@@ -421,6 +421,7 @@ img {
   background-image: url("../img/fish-bg.svg");
   background-repeat: no-repeat;
   background-position: left top 75px;
+  background-size: 40% auto;
 }
 
 .rooms-block {
@@ -516,5 +517,58 @@ img {
 .card__button-icon {
   width: 36px;
   height: 36px;
+}
+
+.reviews {
+  background-image: url("../img/paw-2.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 35% auto;
+}
+
+.reviews-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-title {
+  display: block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+
+.reviews-list {
+  max-width: 600px;
+  width: 90%;
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+}
+
+.reviews-list__item {
+  background-image: url("../img/quot.svg");
+  background-repeat: no-repeat;
+  background-position: left 25px top 25px;
+  background-size: 21px auto;
+  display: block;
+  margin: auto;
+  padding: 25px;
+  padding-left: 55px;
+  background-color: #ffffff;
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+.reviews {
+  background-image: url('../img/paw-2.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 35% auto;
+  &-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-title {
+    display: block;
+    @include rub-b;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+  &-list {
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    &__item {
+      background-image: url('../img/quot.svg');
+      background-repeat: no-repeat;
+      background-position: left 25px top 25px;
+      background-size: 21px auto;
+      display: block;
+      margin: auto;
+      padding: 25px;
+      padding-left: 55px;
+      background-color: $white;
+      @include lato-r;
+      font-size: 15px;
+      line-height: 140%;
+    }
+  }
+}
