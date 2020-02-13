@@ -19,6 +19,10 @@ a {
   color: #1a212f;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   width: 90%;
   max-width: 580px;
@@ -241,7 +245,15 @@ a {
 }
 
 .social__item {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 24px;
   height: 24px;
   margin-right: 20px;
@@ -327,8 +339,13 @@ a {
   line-height: 19px;
 }
 
+.main-btn__icon {
+  height: 36px;
+  width: 36px;
+}
+
 .main-btn:hover {
-  background-color: #ff9669;
+  background-color: #ffe5ca;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
