@@ -29,7 +29,7 @@
               ><span class="main-title__name">Котейка</span>
               <h1 class="main-title__text">Уютная гостиница для котов и кошек</h1>
             </div>
-            <button class="main-btn button">
+            <button class="main-btn">
               <span class="main-btn__text">Забронировать</span>
               <img src="img/paw.png" alt="" class="main-btn__icon" />
             </button>
@@ -41,9 +41,41 @@
     <footer></footer>
 
     <div class="modal" id="modal">
-      <div class="modal-dialog">
-        <button class="modal-dialog__close" id="close">&times;</button>
-        <h3 class="modal-dialog__title">Всплывающее окно</h3>
+      <div class="modal-block">
+        <div class="modal-head">
+          <img src="img/main-logo.svg" alt="" class="modal-logo" />
+          <a class="modal-btn" id="close">
+            <span class="modal-btn__humb"></span>
+          </a>
+        </div>
+        <ul class="modal-list">
+          <li class="modal-list__item">
+            <a href=""><span>Почему мы?</span></a>
+          </li>
+          <li class="modal-list__item">
+            <a href=""><span>Номера</span></a>
+          </li>
+          <li class="modal-list__item">
+            <a href=""><span>Отзывы</span></a>
+          </li>
+          <li class="modal-list__item">
+            <a href=""><span>Контакты</span></a>
+          </li>
+        </ul>
+        <div class="modal-contacts">
+          <a href="tel:+8 (800) 333-55-99" class="modal-contacts__phone">8 (800) 333-55-99</a>
+          <ul class="modal-social social">
+            <li class="social__item">
+              <a href="#" class="social__item-link"><img src="img/icon-fb.png" alt=""/></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__item-link"><img src="img/icon-inst.png" alt=""/></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__item-link"><img src="img/icon-vk.png" alt=""/></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="js/main.js"></script>
