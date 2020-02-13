@@ -348,4 +348,61 @@ img {
   background-color: #ffe5ca;
   cursor: pointer;
 }
+
+.benefits {
+  background-image: url("../img/paw-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right top 37px;
+}
+
+.benefits-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits-title {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.benefits-list__item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+.benefits-list__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.benefits-list__subtitle {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+.benefits-list__text {
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
 /*# sourceMappingURL=style.css.map */
