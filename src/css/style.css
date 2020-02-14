@@ -270,7 +270,7 @@ img {
 }
 
 .main {
-  background-image: url("../img/main-cat.jpg");
+  background-image: url("../img/main-cat__mobile.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,8 +278,8 @@ img {
 }
 
 .main-block {
-  padding-top: 50px;
-  padding-bottom: 230px;
+  padding-top: 20%;
+  padding-bottom: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,10 +359,46 @@ img {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .main {
+    background-image: url("../img/main-cat__tab.jpg");
+  }
+  .main-title__city {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+  .main-title__name {
+    font-size: 62px;
+    line-height: 73px;
+    margin-bottom: 25px;
+  }
+  .main-title__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    background-image: url("../img/main-cat__desk.jpg");
+  }
+  .main-block {
+    padding: 150px 0px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-title {
+    text-align: left;
+  }
+}
+
 .benefits {
   background-image: url("../img/paw-bg.svg");
   background-repeat: no-repeat;
   background-position: right top 37px;
+  background-size: 30% auto;
   padding-bottom: 5px;
 }
 
@@ -415,6 +451,56 @@ img {
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
+}
+
+@media (min-width: 768px) {
+  .benefits {
+    background-position: right top -30px;
+  }
+  .benefits-title {
+    margin-top: 85px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .benefits-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefits-list__item {
+    max-width: 46%;
+    height: 285px;
+  }
+  .benefits-list__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefits {
+    background-size: 20% auto;
+    background-position: right top -30px;
+  }
+  .benefits-list__item {
+    max-width: 31%;
+    height: 321px;
+  }
+  .benefits-list__subtitle {
+    font-size: 22px;
+  }
+  .benefits-list__text {
+    font-size: 16px;
+  }
 }
 
 .rooms {

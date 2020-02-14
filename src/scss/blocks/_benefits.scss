@@ -2,6 +2,7 @@
   background-image: url('../img/paw-bg.svg');
   background-repeat: no-repeat;
   background-position: right top 37px;
+  background-size: 30% auto;
   padding-bottom: 5px;
   &-block {
     display: flex;
@@ -37,6 +38,48 @@
       @include lato-r;
       font-size: 15px;
       line-height: 140%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .benefits {
+    background-position: right top -30px;
+    &-title {
+      margin-top: 85px;
+      margin-bottom: 60px;
+      font-size: 36px;
+      line-height: 43px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &__item {
+        max-width: 46%;
+        height: 285px;
+      }
+      &__subtitle {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .benefits {
+    background-size: 20% auto;
+    background-position: right top -30px;
+    &-list {
+      &__item {
+        max-width: 31%;
+        height: 321px;
+      }
+      &__subtitle {
+        font-size: 22px;
+      }
+      &__text {
+        font-size: 16px;
+      }
     }
   }
 }
