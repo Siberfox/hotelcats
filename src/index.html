@@ -205,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section class="section contacts">
+      <section class="section contacts" id="contacts">
         <div class="contacts-block">
           <div class="contacts-list">
             <span class="contacts-list__title">Как нас найти</span>
@@ -267,7 +267,29 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <img src="img/main-logo.svg" alt="cat logo" class="footer__logo" />
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          <a href="#benefits"><span>Почему мы?</span></a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#rooms"><span>Номера</span></a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#review"><span>Отзывы</span></a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#contacts"><span>Как нас найти</span></a>
+        </li>
+      </ul>
+      <div class="footer-copyright">
+        <span class="footer-copyright__line"></span>
+        <span class="footer-copyright__text"
+          >© 2019 Все права защищены <br />Политика конфиденциальности</span
+        >
+      </div>
+    </footer>
 
     <div class="modal" id="modal">
       <div class="modal-block">
@@ -288,7 +310,7 @@
             <a class="modal__close" href="#review"><span>Отзывы</span></a>
           </li>
           <li class="modal-list__item">
-            <a href=""><span>Контакты</span></a>
+            <a class="modal__close" href="#contacts"><span>Контакты</span></a>
           </li>
         </ul>
         <div class="modal-contacts">

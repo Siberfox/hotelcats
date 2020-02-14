@@ -622,4 +622,55 @@ img {
   line-height: 18px;
   margin-bottom: 30px;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 15px;
+  padding-top: 0;
+  position: relative;
+}
+
+.footer__logo {
+  width: 46px;
+  height: 38px;
+  margin-bottom: 25px;
+}
+
+.footer-list {
+  margin-bottom: 10px;
+}
+
+.footer-list__item {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.footer-copyright__line {
+  display: block;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+  margin: auto;
+}
+
+.footer-copyright__text {
+  display: block;
+  padding-top: 15px;
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8f8f8f;
+}
 /*# sourceMappingURL=style.css.map */

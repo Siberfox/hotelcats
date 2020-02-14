@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+  padding-top: 0;
+  position: relative;
+  &__logo {
+    width: 46px;
+    height: 38px;
+    margin-bottom: 25px;
+  }
+  &-list {
+    margin-bottom: 10px;
+    &__item {
+      @include rub-m;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 20px;
+    }
+  }
+  &-copyright {
+    &__line {
+      display: block;
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      height: 1px;
+      background-color: $line;
+      margin: auto;
+    }
+    &__text {
+      display: block;
+      padding-top: 15px;
+      @include lato-r;
+      font-size: 12px;
+      line-height: 14px;
+      color: $text-grey;
+    }
+  }
+}
