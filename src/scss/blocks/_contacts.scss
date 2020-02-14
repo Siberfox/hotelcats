@@ -1,0 +1,43 @@
+.contacts {
+  &-list {
+    background-color: $bg-orange;
+    padding: 40px 15px;
+
+    &__title {
+      display: block;
+      @include rub-b;
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 40px;
+    }
+  }
+  &-links {
+    &__subtitle {
+      display: block;
+      @include lato-r;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.adress {
+  &-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__subtitle {
+    display: block;
+    @include rub-m;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  &__text {
+    display: block;
+    @include lato-r;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+}

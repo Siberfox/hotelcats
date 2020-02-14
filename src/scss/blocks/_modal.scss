@@ -77,20 +77,5 @@
       line-height: 19px;
       margin-bottom: 25px;
     }
-    &__social {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-    }
-  }
-}
-.social {
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    margin-right: 20px;
   }
 }
