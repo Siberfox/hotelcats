@@ -21,12 +21,7 @@ a {
 
 img {
   width: 100%;
-}
-
-.container {
-  width: 90%;
-  max-width: 580px;
-  margin: auto;
+  height: auto;
 }
 
 .section {
@@ -82,6 +77,12 @@ img {
   width: 24px;
   height: 24px;
   margin-right: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 580px;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -186,8 +187,8 @@ img {
             align-items: center;
   }
   .header-list__item {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    font-family: 'Lato Regular', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin-left: 30px;
@@ -587,6 +588,7 @@ img {
 }
 
 .card__photo {
+  display: block;
   margin-bottom: 25px;
 }
 
@@ -641,6 +643,20 @@ img {
   height: 36px;
 }
 
+@media (min-width: 768px) {
+  .rooms-list {
+    max-width: 700px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rooms-list {
+    max-width: 1000px;
+    width: 80%;
+  }
+}
+
 .reviews {
   background-image: url("../img/paw-2.svg");
   background-repeat: no-repeat;
@@ -671,7 +687,7 @@ img {
 }
 
 .reviews-list {
-  max-width: 600px;
+  max-width: 350px;
   width: 90%;
   -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
           box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -692,6 +708,12 @@ img {
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
+}
+
+@media (min-width: 768px) {
+  .reviews-list {
+    max-width: 450px;
+  }
 }
 
 .contacts-list {

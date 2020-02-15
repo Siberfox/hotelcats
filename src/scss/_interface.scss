@@ -16,11 +16,7 @@ a {
 }
 img {
   width: 100%;
-}
-.container {
-  width: 90%;
-  max-width: 580px;
-  margin: auto;
+  height: auto;
 }
 .section {
   padding: 35px 0;
@@ -54,6 +50,11 @@ img {
   }
 }
 
+.container {
+  width: 90%;
+  max-width: 580px;
+  margin: auto;
+}
 @media (min-width: 768px) {
   .container {
     min-width: 760px;
