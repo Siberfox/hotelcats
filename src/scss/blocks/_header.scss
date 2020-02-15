@@ -42,4 +42,31 @@
       }
     }
   }
+  &-list {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    &-logo {
+      width: 63px;
+      height: 52px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      // min-width: 60%;
+      &__item {
+        @include rub-m;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 30px;
+      }
+    }
+    &-btn {
+      display: none;
+    }
+  }
 }
