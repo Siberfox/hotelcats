@@ -48,8 +48,16 @@
 @media (min-width: 768px) {
   .footer {
     padding: 60px 45px;
+    &__logo {
+      margin-bottom: -25px;
+    }
     &-list {
       flex-wrap: nowrap;
+      justify-content: flex-end;
+      &__item {
+        min-width: auto;
+        margin-right: 30px;
+      }
     }
   }
 }

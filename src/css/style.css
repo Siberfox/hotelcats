@@ -868,9 +868,19 @@ img {
   .footer {
     padding: 60px 45px;
   }
+  .footer__logo {
+    margin-bottom: -25px;
+  }
   .footer-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer-list__item {
+    min-width: auto;
+    margin-right: 30px;
   }
 }
 
