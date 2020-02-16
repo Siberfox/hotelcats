@@ -41,3 +41,19 @@
     margin-bottom: 30px;
   }
 }
+@media (min-width: 768px) {
+  .contacts {
+    &-list {
+      padding: 60px 45px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    &-list {
+      padding: 70px 100px;
+      padding-left: 200px;
+    }
+  }
+}

@@ -413,10 +413,20 @@
         });
         $('.slider').slick({
           arrows: false,
-          dots: true,
+          dots: false,
           infinite: false,
           speed: 300,
-          slidesToShow: 1
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
         });
       });
     </script>

@@ -18,8 +18,6 @@
   &-list {
     max-width: 350px;
     width: 90%;
-    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
-    border-radius: 8px;
     &__item {
       background-image: url('../img/quot.svg');
       background-repeat: no-repeat;
@@ -33,13 +31,30 @@
       @include lato-r;
       font-size: 15px;
       line-height: 140%;
+      box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+      border-radius: 8px;
     }
   }
 }
 @media (min-width: 768px) {
   .reviews {
+    background-position: right top -50px;
+    background-size: 28% auto;
     &-list {
       max-width: 450px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    background-position: right top -50px;
+    background-size: 20% auto;
+    &-list {
+      max-width: 1400px;
+      &__item {
+        height: 206px;
+        margin: 15px;
+      }
     }
   }
 }

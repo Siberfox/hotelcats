@@ -45,3 +45,18 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .footer {
+    padding: 60px 45px;
+    &-list {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 70px 100px;
+    padding-left: 200px;
+  }
+}
