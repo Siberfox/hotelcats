@@ -36,6 +36,13 @@ img {
     cursor: pointer;
   }
 }
+.link {
+  &-text {
+    &:hover {
+      color: $bg-orange;
+    }
+  }
+}
 .social {
   display: flex;
   flex-direction: row;
