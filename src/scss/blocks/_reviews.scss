@@ -18,13 +18,20 @@
   &-list {
     max-width: 350px;
     width: 90%;
+    &__name {
+      display: none;
+      @include lato-r;
+      font-size: 14px;
+      line-height: 17px;
+      color: $text-grey;
+    }
     &__item {
       background-image: url('../img/quot.svg');
       background-repeat: no-repeat;
       background-position: left 25px top 25px;
       background-size: 21px auto;
       display: block;
-      margin: auto;
+      margin: 15px;
       padding: 25px;
       padding-left: 55px;
       background-color: $white;
@@ -41,7 +48,21 @@
     background-position: right top -50px;
     background-size: 28% auto;
     &-list {
-      max-width: 450px;
+      min-width: 500px;
+      max-height: 235px;
+      &__text {
+        display: block;
+        margin-bottom: 25px;
+      }
+      &__item {
+        width: 442px;
+        min-height: 201px;
+        margin: 10px;
+      }
+      &__name {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }
@@ -50,10 +71,16 @@
     background-position: right top -50px;
     background-size: 20% auto;
     &-list {
-      max-width: 1400px;
+      max-width: 1000px;
+      max-height: 230px;
       &__item {
+        background-position: left 25px top 35px;
+        min-width: 470px;
         height: 206px;
         margin: 15px;
+        font-size: 16px;
+        padding: 35px;
+        padding-left: 55px;
       }
     }
   }
