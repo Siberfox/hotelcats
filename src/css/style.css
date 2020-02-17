@@ -166,7 +166,7 @@ img {
           transform: translateY(7px);
 }
 
-.header-list {
+.header-nav {
   display: none;
 }
 
@@ -175,7 +175,7 @@ img {
     width: 63px;
     height: 52px;
   }
-  .header-list {
+  .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -190,7 +190,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header-list__item {
+  .header-nav__item {
     font-family: 'Lato Regular', sans-serif;
     font-weight: 400;
     font-size: 16px;
