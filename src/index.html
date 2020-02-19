@@ -57,7 +57,7 @@
               <span class="main-title__name">Котейка</span>
               <h1 class="main-title__text">Уютная гостиница для котов и кошек</h1>
             </div>
-            <button class="main-btn">
+            <button class="main-btn popup_form">
               <span class="main-btn__text">Забронировать</span>
               <img src="img/paw.svg" alt="" class="main-btn__icon" />
             </button>
@@ -145,7 +145,7 @@
                   <li class="card__stats-item">Размеры (ШхГхВ) 90х100х180 см</li>
                   <li class="card__stats-item">Цена за сутки: 200₽</li>
                 </ul>
-                <button class="button card__button">
+                <button class="button card__button popup_form">
                   <span class="card__button-text">Забронировать</span>
                   <img src="img/paw-btn.svg" alt="" class="card__button-icon" />
                 </button>
@@ -170,7 +170,7 @@
                   <li class="card__stats-item">Размеры (ШхГхВ) 100х125х180 см</li>
                   <li class="card__stats-item">Цена за сутки: 250₽</li>
                 </ul>
-                <button class="button card__button">
+                <button class="button card__button popup_form">
                   <span class="card__button-text">Забронировать</span>
                   <img src="img/paw-btn.svg" alt="" class="card__button-icon" />
                 </button>
@@ -196,7 +196,7 @@
                   <li class="card__stats-item">Цена за сутки: 350₽</li>
                 </ul>
                 <button class="button card__button">
-                  <span class="card__button-text">Забронировать</span>
+                  <span class="card__button-text popup_form">Забронировать</span>
                   <img src="img/paw-btn.svg" alt="" class="card__button-icon" />
                 </button>
               </li>
@@ -385,6 +385,45 @@
               /></a>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup">
+      <div class="container">
+        <div class="popup-block">
+          <div class="popup-form">
+            <button class="popup_close"></button>
+            <h3 class="popup__title">Забронировать номер</h3>
+            <form action="">
+              <input type="username" class="popup__input" placeholder="Ваше имя" />
+              <input type="text" class="popup__input" placeholder="Имя Питомца" />
+              <input type="tel" class="popup__input" placeholder="Телефон" />
+              <input type="email" class="popup__input" placeholder="E-mail" />
+              <p class="popup__date">
+                Дата заезда<br />с
+                <input
+                  class="popup__input-date"
+                  type="date"
+                  value="2020-01-26"
+                  min="2020-01-01"
+                  max="2022-01-01"
+                />
+                по<input
+                  class="popup__input-date"
+                  type="date"
+                  value="2020-02-26"
+                  min="2020-01-01"
+                  max="2022-01-01"
+                />
+              </p>
+
+              <button class="button popup__button">
+                <span class="popup__button-text popup_form">Отправить заявку</span>
+                <img src="img/paw-btn.svg" alt="" class="popup__button-icon" />
+              </button>
+            </form>
+          </div>
+          <div class="popup-success"></div>
         </div>
       </div>
     </div>
