@@ -395,9 +395,9 @@
             <button class="popup_close"></button>
             <h3 class="popup__title">Забронировать номер</h3>
             <form action="">
-              <input type="username" class="popup__input" placeholder="Ваше имя" />
+              <input type="username" class="popup__input" placeholder="Ваше имя*" required />
               <input type="text" class="popup__input" placeholder="Имя Питомца" />
-              <input type="tel" class="popup__input" placeholder="Телефон" />
+              <input type="tel" class="popup__input" placeholder="Телефон*" required />
               <input type="email" class="popup__input" placeholder="E-mail" />
               <p class="popup__date">
                 Дата заезда<br />с
@@ -418,12 +418,20 @@
               </p>
 
               <button class="button popup__button">
-                <span class="popup__button-text popup_form">Отправить заявку</span>
+                <span class="popup__button-text">Отправить заявку</span>
                 <img src="img/paw-btn.svg" alt="" class="popup__button-icon" />
               </button>
             </form>
           </div>
-          <div class="popup-success"></div>
+          <div class="popup-success">
+            <button class="popup-success__close"></button>
+            <h3 class="popup-success__title">Спасибо за заявку!</h3>
+            <p class="popup-success__text">Мы свяжемся с вами в ближайшее время</p>
+            <button class="button popup-sucess__button">
+              <span class="popup__button-text">Ок</span>
+              <img src="img/paw-btn.svg" alt="" class="popup__button-icon" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
