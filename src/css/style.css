@@ -55,6 +55,10 @@ img {
   color: #fac663;
 }
 
+.close {
+  cursor: pointer;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,7 +960,7 @@ img {
   border-radius: 4px;
 }
 
-.popup-form_close {
+.popup-form--close {
   display: none;
 }
 

@@ -30,13 +30,14 @@ popupButton.forEach(el => {
 popupClose.forEach(el => {
   el.addEventListener('click', () => {
     popup.classList.remove('popup_active');
-    popupForm.classList.remove('popup-form_close');
+    popupForm.classList.remove('popup-form--close');
     popupSuccess.classList.remove('popup-success--open');
     document.body.style.overflow = 'auto';
   });
 });
 
 sendForm.addEventListener('click', () => {
-  popupForm.classList.add('popup-form_close');
+  event.preventDefault();
+  popupForm.classList.add('popup-form--close');
   popupSuccess.classList.add('popup-success--open');
 });
