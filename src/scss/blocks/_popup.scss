@@ -59,6 +59,7 @@
   }
   &__date {
     margin-top: 0;
+    margin-bottom: 25px;
   }
   &__close {
     border: none;
@@ -161,15 +162,45 @@
       padding-left: 34px;
       width: 122px;
       margin: auto;
-      &-text {
-        @include lato-r;
-        font-size: 16px;
-        line-height: 19px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .popup {
+    &-form {
+      width: 80%;
+      margin: auto;
+      background-size: 15%;
+      padding: 60px 30px;
+    }
+    &-success {
+      background-size: 30%;
+      width: 80%;
+      margin: auto;
+      &__title {
+        font-size: 28px;
+        line-height: 33px;
       }
-      &-icon {
-        width: 36px;
-        height: 36px;
-      }
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 33px;
+    }
+    &__input {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .popup {
+    &-form {
+      width: 60%;
+    }
+    &-success {
+      background-size: 25%;
+      width: 60%;
     }
   }
 }

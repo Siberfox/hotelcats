@@ -95,7 +95,7 @@ img {
 
 @media (min-width: 768px) {
   .container {
-    min-width: 760px;
+    min-width: 700px;
   }
 }
 
@@ -1004,6 +1004,7 @@ img {
 
 .popup__date {
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .popup__close {
@@ -1130,15 +1131,39 @@ img {
   margin: auto;
 }
 
-.popup-success__button-text {
-  font-family: 'Lato Regular', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+@media (min-width: 768px) {
+  .popup-form {
+    width: 80%;
+    margin: auto;
+    background-size: 15%;
+    padding: 60px 30px;
+  }
+  .popup-success {
+    background-size: 30%;
+    width: 80%;
+    margin: auto;
+  }
+  .popup-success__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .popup__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .popup__input {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
-.popup-success__button-icon {
-  width: 36px;
-  height: 36px;
+@media (min-width: 1200px) {
+  .popup-form {
+    width: 60%;
+  }
+  .popup-success {
+    background-size: 25%;
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
