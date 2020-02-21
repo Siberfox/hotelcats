@@ -36,7 +36,7 @@ popupClose.forEach(el => {
   });
 });
 
-sendForm.addEventListener('click', () => {
+sendForm.addEventListener('click', event => {
   event.preventDefault();
   popupForm.classList.add('popup-form--close');
   popupSuccess.classList.add('popup-success--open');
