@@ -10,7 +10,7 @@ DG.then(function() {
   });
   const myIcon = DG.icon({
     iconUrl: 'img/map-icon.svg',
-    iconSize: [32, 58]
+    iconSize: [40, 66]
   });
   DG.marker([59.938563, 30.322999], { icon: myIcon }).addTo(map);
 });

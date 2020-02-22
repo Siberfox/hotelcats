@@ -826,9 +826,33 @@ img {
   margin-bottom: 30px;
 }
 
+.map {
+  width: 100%;
+  height: 300px;
+}
+
 @media (min-width: 768px) {
+  .contacts-block {
+    height: 615px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .contacts-list {
+    height: 100%;
+    width: 50%;
     padding: 60px 45px;
+  }
+  .map {
+    height: 100%;
+    width: 50%;
   }
 }
 
@@ -836,12 +860,8 @@ img {
   .contacts-list {
     padding: 70px 100px;
     padding-left: 200px;
+    padding-right: 0;
   }
-}
-
-.map {
-  width: 100%;
-  height: 400px;
 }
 
 .footer {
