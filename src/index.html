@@ -207,6 +207,8 @@
                 </div>
               </li>
             </ul>
+            <button type="button" class="slick-prev rooms-prev">Previous</button>
+            <button type="button" class="slick-next rooms-next">Previous</button>
           </div>
         </div>
       </section>
@@ -246,6 +248,8 @@
                 </div>
               </li>
             </ul>
+            <button type="button" class="slick-prev review-prev">Previous</button>
+            <button type="button" class="slick-next review-next">Previous</button>
           </div>
         </div>
       </section>
@@ -447,14 +451,18 @@
     <script>
       $(document).ready(function() {
         $('.single-item').slick({
-          arrows: false,
+          arrows: true,
+          prevArrow: $('.rooms-prev'),
+          nextArrow: $('.rooms-next'),
           dots: true,
           infinite: false,
           speed: 300,
           slidesToShow: 1
         });
         $('.slider').slick({
-          arrows: false,
+          arrows: true,
+          prevArrow: $('.review-prev'),
+          nextArrow: $('.review-next'),
           dots: true,
           infinite: false,
           speed: 300,

@@ -113,6 +113,50 @@ img {
   color: #fac663;
 }
 
+.slick-prev {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  bottom: -15px;
+  right: 45px;
+  top: auto;
+  left: auto;
+}
+
+.slick-prev:before {
+  background-image: url("../img/arrow-left.png");
+  background-position: center center;
+  display: none;
+}
+
+.slick-next {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  bottom: -15px;
+  right: 0;
+  top: auto;
+  left: auto;
+}
+
+.slick-next:before {
+  background-image: url("../img/arrow-right.png");
+  background-position: center center;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .slick-prev:before,
+  .slick-next:before {
+    display: block;
+  }
+  .slick-next,
+  .slick-prev {
+    -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+            box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+  }
+}
+
 @font-face {
   font-family: 'Lato Regular';
   src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
@@ -574,6 +618,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .rooms-title {
@@ -705,6 +750,10 @@ img {
   .rooms-list {
     max-width: 1030px;
   }
+  .card {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .card__photo {
     width: 600px;
     height: 404px;
@@ -738,6 +787,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .reviews-title {
