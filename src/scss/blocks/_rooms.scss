@@ -78,15 +78,65 @@
 @media (min-width: 768px) {
   .rooms {
     &-list {
-      max-width: 700px;
-      width: 90%;
+      max-width: 800px;
+      width: 100%;
+    }
+  }
+  .card {
+    position: relative;
+    box-shadow: none;
+    border-radius: 0;
+    &__photo {
+      width: 442px;
+      height: 326px;
+    }
+    &-wrapper {
+      width: 345px;
+      height: 266px;
+      background-color: $white;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+      border-radius: 8px;
+      padding: 35px;
+    }
+    &__subtitle {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    &__stats {
+      &-item {
+        margin-left: 19px;
+        margin-bottom: 15px;
+      }
+    }
+    &__button {
+      max-width: 206px;
+      margin-left: 0;
+      padding-left: 30px;
     }
   }
 }
 @media (min-width: 1200px) {
   .rooms {
     &-list {
-      width: 80%;
+      max-width: 1030px;
+    }
+  }
+  .card {
+    &__photo {
+      width: 600px;
+      height: 404px;
+    }
+    &-wrapper {
+      width: 500px;
+      height: 284px;
+      top: 60px;
+      padding: 40px 100px;
+    }
+    &__subtitle {
+      margin-bottom: 30px;
     }
   }
 }

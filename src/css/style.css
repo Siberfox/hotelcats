@@ -105,6 +105,14 @@ img {
   }
 }
 
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fac663;
+}
+
 @font-face {
   font-family: 'Lato Regular';
   src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
@@ -653,14 +661,62 @@ img {
 
 @media (min-width: 768px) {
   .rooms-list {
-    max-width: 700px;
-    width: 90%;
+    max-width: 800px;
+    width: 100%;
+  }
+  .card {
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  .card__photo {
+    width: 442px;
+    height: 326px;
+  }
+  .card-wrapper {
+    width: 345px;
+    height: 266px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+            box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    padding: 35px;
+  }
+  .card__subtitle {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .card__stats-item {
+    margin-left: 19px;
+    margin-bottom: 15px;
+  }
+  .card__button {
+    max-width: 206px;
+    margin-left: 0;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .rooms-list {
-    width: 80%;
+    max-width: 1030px;
+  }
+  .card__photo {
+    width: 600px;
+    height: 404px;
+  }
+  .card-wrapper {
+    width: 500px;
+    height: 284px;
+    top: 60px;
+    padding: 40px 100px;
+  }
+  .card__subtitle {
+    margin-bottom: 30px;
   }
 }
 
