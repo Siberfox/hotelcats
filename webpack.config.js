@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 const filename = ext =>
   process.env.NODE_ENV === 'production' ? `[name].[hash].${ext}` : `[name].${ext}`;
@@ -27,6 +28,10 @@ module.exports = {
       minify: {
         collapseWhitespace: process.env.NODE_ENV === 'production'
       }
+    }),
+    new ScriptExtHtmlWebpackPlugin({
+      sync: 'index.js',
+      module: ['map', 'slick']
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
