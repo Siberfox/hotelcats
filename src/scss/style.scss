@@ -1,9 +1,13 @@
+@import 'normalize';
 @import 'colors';
 @import 'interface';
 @import 'fonts';
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700&display=swap&subset=cyrillic');
 @import 'blocks/header';
 @import 'blocks/modal';
 @import 'blocks/main';
+@import 'slick';
+@import 'slick-theme';
 @import 'blocks/benefits';
 @import 'blocks/rooms';
 @import 'blocks/reviews';
