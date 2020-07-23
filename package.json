@@ -57,6 +57,7 @@
   },
   "homepage": "https://github.com/Siberfox/hotelcats#readme",
   "dependencies": {
+    "lazysizes": "^5.2.2",
     "slick-carousel": "^1.8.1"
   }
 }
