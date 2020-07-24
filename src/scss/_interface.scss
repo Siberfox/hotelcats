@@ -76,7 +76,17 @@ img {
     min-width: 1170px;
   }
 }
-
+/* the slides */
+.slick-slide {
+  margin: 10px 10px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-dots {
+  bottom: -35px;
+}
 .slick-dots li button:before {
   font-size: 12px;
 }
@@ -87,7 +97,7 @@ img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  bottom: -15px;
+  bottom: -25px;
   right: 45px;
   top: auto;
   left: auto;
@@ -102,7 +112,7 @@ img {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  bottom: -15px;
+  bottom: -25px;
   right: 0;
   top: auto;
   left: auto;
