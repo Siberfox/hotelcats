@@ -5,7 +5,7 @@ const popup = document.querySelector('#popup');
 const popupButton = document.querySelectorAll('.popup_form');
 const popupClose = document.querySelectorAll('.popup--close');
 const popupForm = document.querySelector('.popup-form');
-const sendForm = document.querySelector('.popup__button');
+const sendForm = document.querySelector('.form');
 const popupSuccess = document.querySelector('.popup-success');
 
 modalButton.addEventListener('click', () => {
@@ -36,8 +36,8 @@ popupClose.forEach(el => {
   });
 });
 
-sendForm.addEventListener('click', event => {
-  event.preventDefault();
+sendForm.addEventListener('submit', e => {
+  e.preventDefault();
   popupForm.classList.add('popup-form--close');
   popupSuccess.classList.add('popup-success--open');
 });
