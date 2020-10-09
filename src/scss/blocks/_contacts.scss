@@ -45,6 +45,7 @@
 .map {
   width: 100%;
   height: 300px;
+  content-visibility: auto;
 }
 
 @media (min-width: 768px) {
